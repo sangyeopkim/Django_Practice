@@ -9,3 +9,4 @@ class Bookmark(models.Model):
     # 이 함수를 정의하지 않으면, Admin 사이트나 장고 셸 등에서 테이블명이 제대로 표현되지 않는다.
     def __str__(self):
         return self.title
+        # return "%s %s" %(self.title, self.url)
