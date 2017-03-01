@@ -8,7 +8,7 @@ class Post(models.Model):
     title = models.CharField('TITLE', max_length=50)
 
     # slug 컬럼은 제목의 별칭
-    # SlugField 에 unique 옵션을 추가해 특정 포스트를 겁색 시 기본 키 대신에 사용
+    # SlugField 에 unique 옵션을 추가해 특정 포스트를 검색 시 기본 키 대신에 사용
     # allow_unicode 옵션을 추가하면 한글 처리가 가능
     # help_text 는 해당 컬럼을 설명해주는 문구로 폼 화면에 나타남. Admin 사이트에서 확인 가능
     slug = models.SlugField('SLUG', unique=True, allow_unicode=True, help_text='one word for title alias.')
