@@ -54,6 +54,8 @@ INSTALLED_APPS = [
 
     # bookmark app 등록
     'bookmark.apps.BookmarkConfig',
+    # blog app 등록
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
