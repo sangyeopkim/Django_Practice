@@ -13,7 +13,7 @@
                 <!-- object_list 객체의 내용을 순회하면서 title 을 화면에 리스트로 보여줌 -->
                 <!-- 각 텍스트에 URL 링크를 연결 -->
                 <!-- {{ bookmark }} 템플릿 변수는 Bookmark 테이블의 특정 레코드 하나를 의미 -->
-                <!-- Bookmark 의 해당 객체를 프린트 하면, 해당 객체의 __str__() 메소드를 호출해서 결과를 출력 -->
+                <!-- Bookmark 의 해당 객체를 프린트 하면, 해당 객체의 __str__() 메소드를 호출해서 결과를 출력 (return 값이 title 이므로 제목만 출력) -->
                 <!-- models.py 에서 그 객체의 title 을 반환하도록 정의했음 -->
                 <li><a href="{% url 'detail' bookmark.id %}">{{ bookmark }}</a></li>
             {% endfor %}
