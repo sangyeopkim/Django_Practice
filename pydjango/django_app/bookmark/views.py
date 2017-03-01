@@ -7,6 +7,7 @@ from bookmark.models import Bookmark
 class BookmarkLV(ListView):
     model = Bookmark
 
-# DetailView (Geeric View)
+
+# DetailView (Generic View)
 class BookmarkDV(DetailView):
     model = Bookmark
