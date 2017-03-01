@@ -1,3 +1,11 @@
 from django.contrib import admin
 
-# Register your models here.
+from bookmark.models import Bookmark
+
+# Admin 사이트에서 Bookmark 내용을 보여주는 클래스
+# title, url 을 화면에 출력
+class BookmarkAdmin(admin.ModelAdmin):
+    list_display = ('title', 'ur')
+
+# admin.site.register() 함수를 사용해 Bookmark, BookmarkAdmin 클래스를 등록
+admin.site.register(Bookmark, BookmarkAdmin)
