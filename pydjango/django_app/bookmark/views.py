@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
-# Create your views here.
+from bookmark.models import Bookmark
+
+
+# ListView (Generic View)
+class BookmarkLV(ListView):
+    model = Bookmark
+
+# DetailView (Geeric View)
+class BookmarkDV(DetailView):
+    model = Bookmark
